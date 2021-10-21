@@ -9,8 +9,8 @@ import Image from 'next/image'
 
 export default function knowledge() {
   return (
-    // <Slider/>
-    <div>
+    // <Slider/> 
+    <div >
       <div className="relative">
         <img className="object-cover w-full h-48" src="https://cubixcode.com/demos/peoplescape/images/home/inner-banner.jpg" alt="coverimg" />
         <div className="absolute inset-0 flex items-center justify-center">

@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        green:{
+        green:{ 
           shop: '#16342E',
         },
         gray: {
@@ -49,6 +49,7 @@ module.exports = {
           section: '#001a57',
           footer: '#001648',
           podcast: '#001a57',
+          homephone: '#9284FB',
         },
         red: {
           1000: '#ff9c00',

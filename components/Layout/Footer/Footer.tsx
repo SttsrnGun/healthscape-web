@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'
-import LogoFooter from "../../../images/logo/logosec.png";
+import LogoFooter from "../../../images/home/section8/sub-3.png";
 import Link from "next/link";
 import { Icon } from '@iconify/react';
 
@@ -14,14 +14,14 @@ export default function Footer() {
             <div className="w-full  py-2">
 
               <div className="mx-auto">
-                <Link href="/">
+                {/* <Link href="/">
                   <a>
                     <Image
                       src={LogoFooter}
                       alt="Peoplescape"
                     />
                   </a>
-                </Link>
+                </Link> */}
               </div>
               <div className="lg:text-md text-sm text-gray-footertext px-4 py-3">
                 This tropic port aboard this tiny ship today still wanted by theam government they survive on up east side to a deluxe as soldiers.

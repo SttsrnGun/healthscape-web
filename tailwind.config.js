@@ -33,6 +33,7 @@ module.exports = {
           1000: '#8f97ab',
           moreinfo: '#A69F88',
           footertext: '#9ca6bf',
+          newstime: '#6D6D6D',
         },
         blue: {
           100: '#ebf8ff',

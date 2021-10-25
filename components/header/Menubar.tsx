@@ -6,25 +6,26 @@ import Link from "next/link";
 //   return <h1>Hello {name}</h1>;
 // };
 
-const Menubar = ({isAwayFromTop}) => {
+const Menubar = ({isAwayFromTop}) => { 
   
   return (
     <>
       {/* -----------top navbar----------- */}
-      <div className={isAwayFromTop ? "bg-white" : "bg-none"}>
+      <div className={isAwayFromTop ? "bg-white text-black" : "absolute inset-x-0  px-auto z-50"}>
         {/* <!-- navbar --> */}
-        <nav className={"flex justify-between w-screen"+87654}>
+        <nav className={"flex justify-between w-screen "+87654}>
           <div className="px-5 xl:px-12 py-6 flex w-full items-center">
-            <Link href="/">
+            <Link href="/home">
+              <a>
               <img
                 className="h-16 py-1"
                 src="https://peoplescape.co.th/events-landing/assets/img/logo.png"
                 alt="Peoplescape"
-              />
+              /></a>
             </Link>
             {/* <!-- Nav Links --> */}
             <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
-              <li><a className="hover:text-gray-200 text-lg font-normal" href="#">PERSONALIZATION</a></li>
+              <li><Link href='/personalization'><a className="hover:text-gray-200 text-lg font-normal">PERSONALIZATION</a></Link></li>
               <li><a className="hover:text-gray-200 text-lg font-normal" href="#">PRODUCT</a></li>
               <li><a className="hover:text-gray-200 text-lg font-normal" href="#">SCIENCE</a></li>
             </ul>

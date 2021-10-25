@@ -3,119 +3,113 @@ import Image from 'next/image'
 import LogoFooter from "../../../images/home/section8/sub-3.png";
 import Link from "next/link";
 import { Icon } from '@iconify/react';
+import { FaRegPaperPlane } from 'react-icons/fa';
+import { BsInstagram } from 'react-icons/bs';
+import { BsTwitter } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
+import { BsLine } from 'react-icons/bs';
 
-export default function Footer() {
+export default function Footer() { 
   return (
     <>
-      <div className="bg-blue-footer pt-6">
-        <div className="container mx-auto">
-          <div className="flex flex-row  py-2 border-b-2 border-blue-section">
-            {/* Space1 */}
-            <div className="w-full  py-2">
+      <div className="bg-green-shop mt-6 "><h3>   </h3>
+        <div className="pt-20 mb-16 container mx-auto">
+          <div className="text-center font-normal text-lg text-white mb-5">Follow and Sign up for our newsletter</div>
+          <div className="flex items-center justify-center ">
+    <div className="container px-4 mx-auto flex flex-wrap items-center justify-center">
+        <div className=" rounded-full bg-green-shop border-2 shadow flex w-2/4">
+            <input
+                type="text"
+                placeholder="Enter your email"
+                className="w-full  py-1 px-4 ml-8 mt-2 mb-2 text-white bg-green-shop rounded-full" />
+            <button className="bg-gray-moreinfo rounded-full   py-4 px-4 mt-2 mb-2 mr-2.5">
+            <FaRegPaperPlane className="text-white text-lg" />
+            </button>
+        </div>
+    </div>
+</div>
 
-              <div className="mx-auto">
-                {/* <Link href="/">
-                  <a>
-                    <Image
-                      src={LogoFooter}
-                      alt="Peoplescape"
-                    />
-                  </a>
-                </Link> */}
-              </div>
-              <div className="lg:text-md text-sm text-gray-footertext px-4 py-3">
-                This tropic port aboard this tiny ship today still wanted by theam government they survive on up east side to a deluxe as soldiers.
-              </div>
-              {/* Social */}
-              <div className="flex justify-start mt-4">
-                <div>
-                  <button className="px-2 py-2 font-semibold text-gray-1000 hover:text-red-1000  inline-flex items-center space-x-2 rounded">
-                    <svg className="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
-                  </button>
-                </div>
-                <div>
-                  <button className="px-2 py-2 font-semibold text-gray-1000 hover:text-red-1000 inline-flex items-center space-x-2 rounded">
-                    <svg className="w-5 h-5 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
-                  </button>
-                </div>
-                <div>
-                  <button className="px-2 py-2 font-semibold text-gray-1000 hover:text-red-1000 inline-flex items-center space-x-2 rounded">
-                    <svg className="w-5 h-5 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                      <g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
-                    </svg>
-                  </button>
-                </div>
-                <div>
-                  <button className="px-2 py-2 font-semibold text-gray-1000 hover:text-red-1000 inline-flex items-center space-x-2 rounded">
-                    <svg className="w-5 h-5 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" /></svg>
-                  </button>
-                </div>
-                <div>
-                  <button className="px-2 py-2 font-semibold text-gray-1000 hover:text-red-1000 inline-flex items-center space-x-2 rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" className="w-5 h-5 fill-current" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12c6.627 0 12-5.373 12-12S18.627 0 12 0zm.14 19.018c-3.868 0-7-3.14-7-7.018c0-3.878 3.132-7.018 7-7.018c1.89 0 3.47.697 4.682 1.829l-1.974 1.978v-.004c-.735-.702-1.667-1.062-2.708-1.062c-2.31 0-4.187 1.956-4.187 4.273c0 2.315 1.877 4.277 4.187 4.277c2.096 0 3.522-1.202 3.816-2.852H12.14v-2.737h6.585c.088.47.135.96.135 1.474c0 4.01-2.677 6.86-6.72 6.86z" fill="currentColor" /></g></svg>
-                  </button>
-                </div>
 
+<div className=" bg-gray-moreinfo rounded-full flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+  <div>
+    <a title="Buy me a pizza" href="https://www.buymeacoffee.com/Dekartmc" target="_blank" className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+      <img className="object-cover object-center w-full h-full rounded-full" src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png"/>
+    </a>
+  </div>
+</div>
+        </div>
+        <div className="relative mb-28 container mx-auto">
+          
+          
+          <div className="mb-16 ">
+            <div className=" sm:grid grid-cols-6  px-4  gap-x-28  space-y-6 md:space-y-0 md:gap-4">
+            <div className="h-full col-span-1 rounded-md  ">
+                <div className="text-lg text-white font-normal"> SHOP</div>
+                <div className="text-white text-base font-light ">Active Silver</div>
+                <div className="text-white text-base font-light ">Excutive Silver</div>
+                <div className="text-white text-base font-light ">Passive Silver</div>
+                <div className="text-white text-base font-light ">Socialize Silver</div>
+                <div className="text-white text-base font-light ">Fasting</div>
               </div>
+
+              <div className="h-full col-span-1 rounded-md  ">
+                <div className="text-lg text-white font-normal"> QUICK LINKS</div>
+                <div className="text-white text-base font-light ">Personalize</div>
+                <div className="text-white text-base font-light ">Science</div>
+                <div className="text-white text-base font-light ">Promotions</div>
+              </div>
+
+              <div className="h-full col-span-1 rounded-md  ">
+                <div className="text-lg text-white font-normal"> COMPANY</div>
+                <div className="text-white text-base font-light ">About us</div>
+                <div className="text-white text-base font-light ">News</div>
+                <div className="text-white text-base font-light ">Blog</div>
+                <div className="text-white text-base font-light ">Contact us</div>
+                <div className="text-white text-base font-light ">Store List</div>
+              </div>
+              <div className="h-full col-span-1 rounded-md  ">
+                <div className="text-lg text-white font-normal"> HELP</div>
+                <div className="text-white text-base font-light ">Help Center</div>
+                <div className="text-white text-base font-light ">Term & Conditions</div>
+                <div className="text-white text-base font-light ">Privacy Policy</div>
+              </div>
+
+              <div className="h-full col-span-2 rounded-md  ">
+                <div className="mb-10"><img className="w-20 h-14 mx-auto" src="data:image/png;base64,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"/> </div>
+                <div className="text-lg text-white text-center font-normal "> FOLLOW US</div>
+                <div><div className="flex justify-start my-1">
+                  <div className="flex flex-row mx-auto">
+              <div className="flex mx-1">
+                <button className="px-2 py-2 font-semibold text-gray-moreinfo hover:text-red-1000  inline-flex items-center space-x-2 rounded">
+                <BsInstagram className="text-2xl "/>
+                </button>
+              </div>
+              <div className="flex mx-1">
+                <button className="px-2 py-2 font-semibold text-gray-moreinfo hover:text-red-1000  inline-flex items-center space-x-2 rounded">
+                <BsTwitter className="text-2xl "/>
+                </button>
+              </div>
+              <div className="flex mx-1">
+                <button className="px-2 py-2 font-semibold text-gray-moreinfo hover:text-red-1000  inline-flex items-center space-x-2 rounded">
+                <BsFacebook className="text-2xl "/>
+                </button>
+              </div>
+              <div className="flex mx-1">
+                <button className="px-2 py-2 font-semibold text-gray-moreinfo hover:text-red-1000  inline-flex items-center space-x-2 rounded">
+                <BsLine className="text-2xl "/>
+                </button>
+              </div>
+              </div>
+
+            </div></div>
+              </div>
+
             </div>
 
-            {/* Space2 */}
-            <div className="w-6/12 lg:px-0 px-6  py-3 ">
-
-
-              <div className="font-bold text-lg text-white">
-                EXPLORE
-              </div>
-              <ul className="mt-2 list-disc text-gray-footertext ">
-                <li className="text-base py-2">TERM & CONDITIONS</li>
-                <li className="text-base py-2">PRIVACY POLICY</li>
-                <li className="text-base py-2">FAQ's</li>
-              </ul>
-            </div>
-
-            {/* Space3 */}
-            <div className="w-6/12 lg:px-4  py-3 hidden lg:block">
-
-
-              <div className="font-bold text-lg text-white">
-                NEWSLETTER
-              </div>
-              <form name="newsletter" className="flex flex-wrap gap-6">
-                <div className="w-full py-2 border-b-2 border-gray-1000 flex justify-between gap-3">
-                  <input type="name" className="outline-none text-white text-md flex-1 px-2 py-1 bg-transparent" placeholder="Name*" />
-                </div>
-                <div className="w-full py-2 border-b-2 border-gray-1000 flex justify-between gap-3">
-                  <input type="email" className="outline-none text-white text-md flex-1 px-2 py-1 bg-transparent" placeholder="Email*" />
-                </div>
-                <button type="submit" className="text-lg font-semibold text-gray-800 px-4 py-1  
-            rounded-lg hover:bg-gray-300 bg-white ml-auto">SUBSCRIBE</button>
-
-              </form>
-            </div>
-
-            {/* Space4 */}
-            <div className="w-full lg:pl-auto px-4 py-3">
-
-
-              <div className="font-bold text-lg text-white">
-                CONTACT
-              </div>
-              <ul className="list-disc text-gray-footertext ">
-                <li className="py-2 flex flex-row mt-2"><Icon icon="carbon:location-filled" width="22" height="22" />
-                  <p className="pl-4">23A, MJD Tower, Thonglor 10, Bangkok, Thailand.</p>
-                </li>
-                <li className="py-2 flex flex-row"><Icon icon="carbon:email" width="22" height="22" />
-                  <p className="pl-4"><a href="#">contact@peoplescape.co.th</a></p>
-                </li>
-                <li className="py-2 flex flex-row"><Icon icon="bx:bx-phone" width="22" height="22" />
-                  <p className="pl-4"><a href="#">(+2) 345 9808 000</a></p>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="py-2 md:flex md:items-center md:justify-center py-auto text-gray-footertext " >
-            <p>© Peoplescape 2021. Powered by Techscape</p>
-          </div>
+          <p>© 2021 Healthscape. Powered by Techscape</p>
+        </div>
         </div>
       </div>
     </>

@@ -2,7 +2,7 @@
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 import Slider from '../../components/Slider/Slider';
-import Header from '../../components/Layout/Header/Header';
+// import Header from '../../components/Layout/Header/Header';
 import Banner from "../../../images/banner/inner-banner.jpg";
 import { Icon } from '@iconify/react';
 import LogoFooter from "../../../images/logo/logosec.png";

@@ -1,12 +1,22 @@
 import Link from "next/link";
 import { Icon } from '@iconify/react';
+// import Image from 'next/image';
+// import LogoFooter from "../../images/home/section8/aunt.png";
 
 export default function Home() {
   return (
     <>
+    {/* <Link href="/">
+    <a>
+      <Image
+        src={LogoFooter}
+        alt="Peoplescape"
+      />
+    </a>
+  </Link> */}
       {/* ----------section---------- */}
-      <div className="bg-white">
-        <div className="relative">
+      <div >
+        <div className="relative ">
           <img className="object-cover w-full h-screen" src="https://chiselwood.co.uk/wp-content/uploads/2019/03/Lead-image-DC3754-009-1-e1556187278331.jpg" />
           <div className="absolute inset-0 flex flex-col justify-center ml-44">
             <div className="w-full text-white text-6.125xl font-medium  ">BE</div>
@@ -354,32 +364,28 @@ export default function Home() {
                 Blog
               </div>
               <div className="leading-normal">
-              <div className=" text-4xl text-black font-medium">
-                OUR TEAM OF MEDICAL EXPERTS
-              </div>
-              <div className=" text-4xl text-black font-medium">
-                SHARE THEIR THROUGHS
-              </div>
+                <div className=" text-4xl text-black font-medium">
+                  OUR TEAM OF MEDICAL EXPERTS
+                </div>
+                <div className=" text-4xl text-black font-medium">
+                  SHARE THEIR THROUGHS
+                </div>
               </div>
             </div>
           </div>
           <div>
-            <div className=" sm:grid grid-cols-3  px-4   space-y-6 md:space-y-0 md:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  px-4   space-y-6 md:space-y-0 md:gap-4">
 
-              <div className="h-full col-span-3 xl:col-span-3  rounded-md flex items-center">
-                <div className="text-gray-600 body-font">
-                  <div className="flex flex-wrap w-full mb-4 p-4">
-                    {/* <div className="w-full mb-6 lg:mb-0">
-                                        <h1 className="sm:text-4xl text-5xl  font-bold title-font mb-2 text-gray-900">BLOG</h1>
-                                        <div className="h-1 w-20 bg-gray-500 rounded"></div>
-                                    </div> */}
-                  </div>
-                  <div className="flex flex-wrap -m-4 mb-12">
-                    <div className="lg:w-1/3 w-full p-4 h-4/5">
-                      <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <img className="w-full mb-6" src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Fsub-1.3ec1e39bd5a611ef07286ef3a22c84d5.png&w=1920&q=75" alt="" />
-                        <div className="px-8 rounded-lg bg-white container mx-auto">
-                          <div className="text-gray-moreinfo text-center  text-lg font-normal mb-1.5 leading-6">
+              <div className="col-span-1 md:col-span-3 lg:col-span-3 xl:col-span-3 h-full   rounded-md flex items-center text-gray-600 body-font">
+                <div>
+
+                  <div className="flex flex-row gap-12 mb-12">
+                    <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto container shadow-lg hover:shadow-xl transition duration-500 ">
+                      <div>
+                        <img className="w-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
+                      </div>
+                      <div className="px-8 ">
+                          <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
                             Lifestyle
                           </div>
                           <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
@@ -394,33 +400,30 @@ export default function Home() {
                           <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
                           {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
                         </div>
-
-                      </div>
                     </div>
 
 
-                    <div className="lg:w-1/3 w-full p-4 h-4/5">
-                      <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <img className="w-full pt-0 px-14" src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Fsub-2.7a514ab7a9d4066ad931feaf025e68a2.png&w=828&q=75" alt="" />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="flex flex-col">
-                        <div className="text-gray-moreinfo text-center text-lg font-normal mb-1.5 leading-6">
+                    <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto bg-white relative shadow-lg hover:shadow-xl transition duration-500">
+                      <img className="w-full " src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Faunt.02a5a510280df13ce3f17f8d8cb3b4ec.png&w=828&q=75" alt="" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="flex flex-col">
+                          <div className="text-gray-moreinfo text-center text-lg font-normal mb-1.5 leading-6">
                             Lifestyle
                           </div>
                           <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
-                            </div>
-                            <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">
+                          </div>
+                          <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">
                             powder & How to use it</div>
-                        </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="lg:w-1/3 w-full p-4 h-4/5">
-                      <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <img className="w-full mb-6" src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Fsub-3.18754cde872055f53963101ccc23d7c8.png&w=1920&q=75" alt="" />
-                        <div className="px-8 rounded-lg bg-white container mx-auto">
-                          <div className="text-gray-moreinfo text-center  text-lg font-normal mb-1.5 leading-6">
+                    <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto  shadow-lg hover:shadow-xl transition duration-500 ">
+                      <div>
+                        <img className="w-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
+                      </div>
+                      <div className="px-8 ">
+                          <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
                             Lifestyle
                           </div>
                           <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
@@ -435,15 +438,13 @@ export default function Home() {
                           <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
                           {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
                         </div>
-
-                      </div>
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-            <button className="text-white bg-green-shop leading-4  rounded-full px-16 py-1 hover:border-transparent ">
-              <div className="py-2 font-normal text-lg">ALL BLOG</div>
-            </button>
-          </div>
+                    <button className="text-white bg-green-shop leading-4  rounded-full px-16 py-1 hover:border-transparent ">
+                      <div className="py-2 font-normal text-lg">ALL BLOG</div>
+                    </button>
+                  </div>
                 </div>
 
               </div>
@@ -456,16 +457,16 @@ export default function Home() {
         </div>
         {/* ----------section---------- */}
 
-         {/* ----------section---------- */}
-         <div className="relative">
-         <div className="w-full flex justify-center">
+        {/* ----------section---------- */}
+        <div className="relative">
+          <div className="w-full flex justify-center">
             <button className="text-white bg-green-shop leading-4  rounded-full px-6 py-3 hover:border-transparent ">
               <div className="flex flex-row">
-            <Icon className="mx-3" icon="ant-design:message-outlined" color="white" width="24" height="24" />
-            <Icon className="mx-3" icon="akar-icons:phone" color="white" width="24" height="24" />
-            <Icon className="mx-3" icon="akar-icons:person" color="white" width="24" height="24" />
-            </div>
-              
+                <Icon className="mx-3" icon="ant-design:message-outlined" color="white" width="24" height="24" />
+                <Icon className="mx-3" icon="akar-icons:phone" color="white" width="24" height="24" />
+                <Icon className="mx-3" icon="akar-icons:person" color="white" width="24" height="24" />
+              </div>
+
             </button>
           </div>
         </div>

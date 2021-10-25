@@ -399,22 +399,24 @@ export default function Home() {
                     </div>
 
 
-                    <div className="lg:w-1/3 w-full  p-4">
-                      <div className="relative">
-                        <img className="object-cover h-full w-auto" src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Fsub-2.7a514ab7a9d4066ad931feaf025e68a2.png&w=828&q=75" alt="coverimg" />
+                    <div className="lg:w-1/3 w-full p-4 h-4/5">
+                      <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="w-full pt-0 px-14" src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Fsub-2.7a514ab7a9d4066ad931feaf025e68a2.png&w=828&q=75" alt="" />
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="flex flex-col">
-                        <div className="text-white text-center text-lg font-normal mb-1.5 leading-6">
+                        <div className="text-gray-moreinfo text-center text-lg font-normal mb-1.5 leading-6">
                             Lifestyle
                           </div>
                           <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                            </div>
+                            <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">
                             powder & How to use it</div>
                         </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="lg:w-1/3 w-full p-4">
+                    <div className="lg:w-1/3 w-full p-4 h-4/5">
                       <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
                         <img className="w-full mb-6" src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Fsub-3.18754cde872055f53963101ccc23d7c8.png&w=1920&q=75" alt="" />
                         <div className="px-8 rounded-lg bg-white container mx-auto">
@@ -438,7 +440,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
-            <button className="text-white bg-green-shop leading-4  rounded-full px-12 py-1 hover:border-transparent ">
+            <button className="text-white bg-green-shop leading-4  rounded-full px-16 py-1 hover:border-transparent ">
               <div className="py-2 font-normal text-lg">ALL BLOG</div>
             </button>
           </div>
@@ -457,8 +459,13 @@ export default function Home() {
          {/* ----------section---------- */}
          <div className="relative">
          <div className="w-full flex justify-center">
-            <button className="text-white bg-green-shop leading-4  rounded-full px-12 py-1 hover:border-transparent ">
-              <div className="py-2 font-normal text-lg">MESSAGE PHONE CONTACT</div>
+            <button className="text-white bg-green-shop leading-4  rounded-full px-6 py-3 hover:border-transparent ">
+              <div className="flex flex-row">
+            <Icon className="mx-3" icon="ant-design:message-outlined" color="white" width="24" height="24" />
+            <Icon className="mx-3" icon="akar-icons:phone" color="white" width="24" height="24" />
+            <Icon className="mx-3" icon="akar-icons:person" color="white" width="24" height="24" />
+            </div>
+              
             </button>
           </div>
         </div>

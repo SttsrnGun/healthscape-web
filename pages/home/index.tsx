@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 export default function Home() {
   return (
     <>
-    {/* <Link href="/">
+      {/* <Link href="/">
     <a>
       <Image
         src={LogoFooter}
@@ -63,11 +63,13 @@ export default function Home() {
                   <div className="text-blue-homephone text-lg font-medium text-center pb-3">TO HEALTH STARTS HERE.</div>
                   <div>
                     <button className="text-white mx-auto bg-gray-moreinfo text-sm flex justify-center my-9  leading-4  rounded-full px-8 py-4 hover:border-transparent ">
-                      <div className="py-2 font-medium text-lg">TAKE A QUIZ</div></button>
+                      <div className="py-2 font-medium text-lg"><a href="/quiz">TAKE A QUIZ</a></div></button>
                   </div>
-                  <div className="py-2 text-black text-base font-extralight text-center"><div>vitamins, protein,</div>
+                  <div className="py-2 text-black text-base font-extralight text-center">
+                    <div>vitamins, protein,</div>
                     <div>and now collagen too,</div>
-                    <div>personalized just for you.</div></div>
+                    <div>personalized just for you.</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -385,21 +387,21 @@ export default function Home() {
                         <img className="w-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
                       </div>
                       <div className="px-8 ">
-                          <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
-                            Lifestyle
-                          </div>
-                          <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
-                            powder & How to use it</div>
-                          <div className="flex flex-row justify-between mb-3.5">
-                            <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
-                            <div className="text-gray-moreinfo text-base font-light leading-6">
-                              by Trisha Smith
-                            </div>
-                          </div>
-
-                          <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
-                          {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                        <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
+                          Lifestyle
                         </div>
+                        <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                          powder & How to use it</div>
+                        <div className="flex flex-row justify-between mb-3.5">
+                          <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
+                          <div className="text-gray-moreinfo text-base font-light leading-6">
+                            by Trisha Smith
+                          </div>
+                        </div>
+
+                        <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
+                        {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                      </div>
                     </div>
 
 
@@ -423,21 +425,21 @@ export default function Home() {
                         <img className="w-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
                       </div>
                       <div className="px-8 ">
-                          <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
-                            Lifestyle
-                          </div>
-                          <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
-                            powder & How to use it</div>
-                          <div className="flex flex-row justify-between mb-3.5">
-                            <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
-                            <div className="text-gray-moreinfo text-base font-light leading-6">
-                              by Trisha Smith
-                            </div>
-                          </div>
-
-                          <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
-                          {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                        <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
+                          Lifestyle
                         </div>
+                        <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                          powder & How to use it</div>
+                        <div className="flex flex-row justify-between mb-3.5">
+                          <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
+                          <div className="text-gray-moreinfo text-base font-light leading-6">
+                            by Trisha Smith
+                          </div>
+                        </div>
+
+                        <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
+                        {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                      </div>
                     </div>
                   </div>
                   <div className="w-full flex justify-center">
@@ -457,20 +459,7 @@ export default function Home() {
         </div>
         {/* ----------section---------- */}
 
-        {/* ----------section---------- */}
-        <div className="relative">
-          <div className="w-full flex justify-center">
-            <button className="text-white bg-green-shop leading-4  rounded-full px-6 py-3 hover:border-transparent ">
-              <div className="flex flex-row">
-                <Icon className="mx-3" icon="ant-design:message-outlined" color="white" width="24" height="24" />
-                <Icon className="mx-3" icon="akar-icons:phone" color="white" width="24" height="24" />
-                <Icon className="mx-3" icon="akar-icons:person" color="white" width="24" height="24" />
-              </div>
-
-            </button>
-          </div>
-        </div>
-        {/* ----------section---------- */}
+        
 
         {/* footer */}
       </div>

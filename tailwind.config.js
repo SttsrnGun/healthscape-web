@@ -18,6 +18,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        pink:{ 
+          favorite: '#e11584',
+        },
+
         green:{ 
           shop: '#16342E',
         },
@@ -35,6 +39,19 @@ module.exports = {
           moreinfo: '#A69F88',
           footertext: '#9ca6bf',
           newstime: '#6D6D6D',
+          female: '#8f9980',
+          backgroundrec: '#fafafa',
+          stomach: '#AE6A6A',
+          brain: '#59B7DF',
+          moon: '#FFC224',
+          eye: '#8B78FF',
+          bone: '#222222',
+          lip: '#D0B698',
+          immunesystem: '#CACADF',
+          bonejoint:'#E4C9C0',
+          muscle:'#BDD1B5',
+          skin:'#C8C0BD',
+          productdetailchart: '#FAFAFA',
         },
         blue: {
           100: '#ebf8ff',

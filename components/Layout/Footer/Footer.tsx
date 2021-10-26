@@ -12,7 +12,24 @@ import { BsLine } from 'react-icons/bs';
 export default function Footer() { 
   return (
     <>
-      <div className="bg-green-shop mt-6 "><h3>   </h3>
+    {/* ----------section---------- */}
+    
+          
+          <div className="rounded-full flex items-end justify-end fixed bottom-0 inset-x-0 mb-4  z-10">
+          <div className="w-full flex justify-center">
+            <button className="text-white bg-green-shop leading-4  rounded-full px-6 py-3 hover:border-transparent ">
+              <div className="flex flex-row">
+                <Icon className="mx-3" icon="ant-design:message-outlined" color="white" width="24" height="24" />
+                <Icon className="mx-3" icon="akar-icons:phone" color="white" width="24" height="24" />
+                <Icon className="mx-3" icon="akar-icons:person" color="white" width="24" height="24" />
+              </div>
+
+            </button>
+          </div>
+</div>
+        
+        {/* ----------section---------- */}
+      <div className="bg-green-shop mt-6 ">
         <div className="pt-20 mb-16 container mx-auto">
           <div className="text-center font-normal text-lg text-white mb-5">Follow and Sign up for our newsletter</div>
           <div className="flex items-center justify-center ">
@@ -33,7 +50,7 @@ export default function Footer() {
 <div className=" bg-gray-moreinfo rounded-full flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
   <div>
     <a title="Buy me a pizza" href="https://www.buymeacoffee.com/Dekartmc" target="_blank" className="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
-      <img className="object-cover object-center w-full h-full rounded-full" src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png"/>
+      <Icon className="object-cover object-center w-full h-full rounded-full text-white px-4" icon="bytesize:chevron-top" width="24" height="16" />
     </a>
   </div>
 </div>

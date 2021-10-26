@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       {/* <div className="sticky top-0 z-50"> */}
         {/* -----------top navbar----------- */}
-        <div className="fixed mx-auto z-50">
+        <div className="fixed mx-auto mt-0 z-50">
           {/* <!-- navbar --> */}
           <nav className="flex justify-between bg-white  text-black w-screen">
             <div className="px-5 xl:px-12 py-6 flex w-full items-center">

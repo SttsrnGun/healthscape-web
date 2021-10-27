@@ -226,4 +226,4 @@ export default function Quiz() {
             </div>
         </>
     )
-} document.getElementById("where-to-render")
+} 

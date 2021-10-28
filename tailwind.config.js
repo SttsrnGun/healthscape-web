@@ -53,6 +53,7 @@ module.exports = {
           skin:'#C8C0BD',
           productdetailchart: '#FAFAFA',
           relatedproduct: '#F7F7F7',
+          cartandcheckout: '#f3f3f3',
         },
         blue: {
           100: '#ebf8ff',

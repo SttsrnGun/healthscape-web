@@ -1,209 +1,315 @@
-import React from "react";
-import Image from 'next/image'
-import MainContent from "../../images/blog/9.jpg";
-import Section1 from "../../images/blog/13.jpg";
 import Link from "next/link";
 import { Icon } from '@iconify/react';
+import { AiOutlineHeart } from 'react-icons/ai';
+import { AiFillHeart } from 'react-icons/ai';
+import { useState } from "react";
+import ReactStars from "react-rating-stars-component";
+import React from "react";
+import { render } from "react-dom";
+import { FaHeartbeat } from 'react-icons/fa';
+import { FaBalanceScale } from 'react-icons/fa';
+import { GiStomach } from 'react-icons/gi';
+import { GiNightSleep } from 'react-icons/gi';
+import { FaRegEye } from 'react-icons/fa';
+import { BiBone } from 'react-icons/bi';
+import { BiBrain } from 'react-icons/bi';
+import { GiLips } from 'react-icons/gi';
+import { BsHandbag } from 'react-icons/bs';
+// import Image from 'next/image';
+// import LogoFooter from "../../images/quiz/bg-quiz.png";
 
+export default function Blog() {
+    const [showMe, setShowMe] = useState(false);
+    function toggle() {
+        setShowMe(!showMe);
+    }
 
-export default function Home() {
+    const ratingChanged = (newRating) => {
+        console.log(newRating);
+    };
     return (
+        <>
+            {/* <Link href="/">
+    <a>
+      <Image
+        src={LogoFooter}
+        alt="Peoplescape"
+      />
+    </a>
+  </Link> */}
 
-        <div>
-
-            <title>PEOPLESCAPE - HORD Consulting &amp; Services</title>
-
-            <div className="relative">
-                <img className="object-cover w-full h-48" src="https://cubixcode.com/demos/peoplescape/images/home/inner-banner.jpg" alt="coverimg" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="w-full text-white text-5xl font-black text-center ">BLOG SINGLE</p>
+            <div className="container mx-auto" >
+                <div className="mt-20  mb-11">
+                    <div className="flex flex-row">
+                        <div className="text-xs text-gray-moreinfo font-light leading-3"><a href="/home">HOME</a></div>
+                        <div className="px-1 text-gray-moreinfo text-xs font-light leading-3">/</div>
+                        <div className=" text-xs text-black font-light leading-3">BLOG</div>
+                    </div>
                 </div>
+
+                <div className="mb-10">
+                    <div className="text-center text-green-shop font-medium text-4xl leading-loose">
+                        BLOG
+                    </div>
+                </div>
+
+                {/* ----------section---------- */}
+                <div className="relative mb-16">
+                    <img className="object-cover w-full h-screen" src="https://chiselwood.co.uk/wp-content/uploads/2019/03/Lead-image-DC3754-009-1-e1556187278331.jpg" />
+                    <div className="absolute inset-x-0 top-96 flex flex-col justify-center">
+                        <div className="w-full text-white text-center text-lg font-normal leading-6 ">Lifestyle</div>
+                        <div className="w-full text-white text-4xl font-medium leading-loose text-center">Different types of protein</div>
+                        <div className="w-full text-white text-4xl font-medium leading-loose text-center mb-7">powder & How to use it</div>
+                        <div className="text-lg text-white w-full text-center mb-3 font-medium leading-6"> September 20, 2021</div>
+                        <div className="text-lg text-white w-full text-center mb-3 font-light leading-6"> by Trisha Smith</div>
+
+                    </div>
+                </div>
+
+                {/* ----------section---------- */}
+
+                {/* ----------section---------- */}
+                <div className="mb-16 container mx-auto">
+
+                    <div>
+
+                        <div className="flex flex-col lg:flex-row lg:gap-4 xl:gap-12  lg:mb-12">
+                            <div className="flex flex-col md:flex-row md:gap-6 md:mb-6 lg:mb-0 lg:gap-0 w-auto justify-center">
+                                <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 h-auto container shadow-lg hover:shadow-xl transition duration-500 pb-6 mx-auto">
+                                    <div>
+                                        <img className="w-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
+                                    </div>
+                                    <div className="px-8 ">
+                                        <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
+                                            Lifestyle
+                                        </div>
+                                        <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                                            powder & How to use it</div>
+                                        <div className="flex flex-row justify-between mb-3.5">
+                                            <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
+                                            <div className="text-gray-moreinfo text-base font-light leading-6">
+                                                by Trisha Smith
+                                            </div>
+                                        </div>
+
+                                        <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
+                                        {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                                    </div>
+                                </div>
+
+
+                                <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/3 h-auto bg-white relative shadow-lg hover:shadow-xl transition duration-500 mx-auto">
+                                    <img className="w-full h-full " src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Faunt.02a5a510280df13ce3f17f8d8cb3b4ec.png&w=828&q=75" alt="" />
+                                    <div className="absolute inset-0 flex items-center justify-center w-full">
+                                        <div className="flex flex-col">
+                                            <div className="text-gray-moreinfo text-center text-lg font-normal mb-1.5 leading-6">
+                                                Lifestyle
+                                            </div>
+                                            <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                                            </div>
+                                            <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">
+                                                powder & How to use it</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto  shadow-lg hover:shadow-xl transition duration-500 pb-6 mx-auto">
+                                <div>
+                                    <img className="w-full h-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
+                                </div>
+                                <div className="px-8 ">
+                                    <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
+                                        Lifestyle
+                                    </div>
+                                    <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                                        powder & How to use it</div>
+                                    <div className="flex flex-row justify-between mb-3.5">
+                                        <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
+                                        <div className="text-gray-moreinfo text-base font-light leading-6">
+                                            by Trisha Smith
+                                        </div>
+                                    </div>
+
+                                    <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
+                                    {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row gap-12">
+                            <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto bg-white relative shadow-lg hover:shadow-xl transition duration-500 mx-auto">
+                                <img className="w-full h-full " src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fhome%2Fsection8%2Faunt.02a5a510280df13ce3f17f8d8cb3b4ec.png&w=828&q=75" alt="" />
+                                <div className="absolute inset-0 flex items-center justify-center">
+                                    <div className="flex flex-col">
+                                        <div className="text-gray-moreinfo text-center text-lg font-normal mb-1.5 leading-6">
+                                            Lifestyle
+                                        </div>
+                                        <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                                        </div>
+                                        <div className="text-white font-medium text-2xl text-center hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">
+                                            powder & How to use it</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto  shadow-lg hover:shadow-xl transition duration-500 pb-6 mx-auto">
+                                <div>
+                                    <img className="w-full h-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
+                                </div>
+                                <div className="px-8 ">
+                                    <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
+                                        Lifestyle
+                                    </div>
+                                    <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                                        powder & How to use it</div>
+                                    <div className="flex flex-row justify-between mb-3.5">
+                                        <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
+                                        <div className="text-gray-moreinfo text-base font-light leading-6">
+                                            by Trisha Smith
+                                        </div>
+                                    </div>
+
+                                    <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
+                                    {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                                </div>
+                            </div>
+                            <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-auto  shadow-lg hover:shadow-xl transition duration-500 pb-6 mx-auto">
+                                <div>
+                                    <img className="w-full h-full mb-6" src="http://beeimg.com/images/h26180623163.jpg" alt="" />
+                                </div>
+                                <div className="px-8 ">
+                                    <div className="text-gray-moreinfo  text-center  text-lg font-normal mb-1.5 leading-6">
+                                        Lifestyle
+                                    </div>
+                                    <div className="text-black font-medium text-2xl hover:text-gray-900 hover:cursor-pointer mb-3.5 leading-normal">Different types of protein
+                                        powder & How to use it</div>
+                                    <div className="flex flex-row justify-between mb-3.5">
+                                        <div className="text-gray-newstime font-light text-base leading-6">September 20, 2021</div>
+                                        <div className="text-gray-moreinfo text-base font-light leading-6">
+                                            by Trisha Smith
+                                        </div>
+                                    </div>
+
+                                    <p className="text-black text-lg leading-7 font-light tracking-wide">Protein powder remains a popular topic of discussion amongst the Sweat Community you might have considered a nutritional supplement </p>
+                                    {/* <button className="mt-6 py-2 px-4 bg-yellow-400 text-indigo-900 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300"><a href="/blog">READ MORE</a></button> */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                {/* ----------section---------- */}
+
+
+
+
+                {/* ----------section---------- */}
+                <div className="container mx-auto pb-60">
+                    <div className="flex flex-row mb-16">
+                        <div className="mr-8 w-4/12">
+                            <img src="data:image/jpeg;base64,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" className="h-full w-full" />
+                        </div>
+                        <div className="">
+                            <div className="font-medium text-2xl  mb-1 lg:w-5/12">
+                                Protein Shake Recipe: Homemade Sattu Shake To Fuel Up Your Protein...
+                            </div>
+                            <div className=" text-base text-gray-newstime leading-6 mb-1 items-end lg:items-start">
+                                September 20, 2021
+                            </div>
+                            <div className="text-lg font-light leading-relaxed lg:w-8/12 hidden lg:block">
+                                here is much emerging information surrounding the impact of sleep duration and quality on food choice and consumption in both children and adults
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row mb-16">
+                        <div className="mr-8 w-4/12">
+                            <img src="data:image/jpeg;base64,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" className="h-full w-full" />
+                        </div>
+                        <div className="">
+                            <div className="font-medium text-2xl  mb-1 lg:w-5/12">
+                                Protein Shake Recipe: Homemade Sattu Shake To Fuel Up Your Protein...
+                            </div>
+                            <div className=" text-base text-gray-newstime leading-6 mb-1 items-end lg:items-start">
+                                September 20, 2021
+                            </div>
+                            <div className="text-lg font-light leading-relaxed lg:w-8/12 hidden lg:block">
+                                here is much emerging information surrounding the impact of sleep duration and quality on food choice and consumption in both children and adults
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row mb-16">
+                        <div className="mr-8 w-4/12">
+                            <img src="data:image/jpeg;base64,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" className="h-full w-full" />
+                        </div>
+                        <div className="">
+                            <div className="font-medium text-2xl  mb-1 lg:w-5/12">
+                                Protein Shake Recipe: Homemade Sattu Shake To Fuel Up Your Protein...
+                            </div>
+                            <div className=" text-base text-gray-newstime leading-6 mb-1 items-end lg:items-start">
+                                September 20, 2021
+                            </div>
+                            <div className="text-lg font-light leading-relaxed lg:w-8/12 hidden lg:block">
+                                here is much emerging information surrounding the impact of sleep duration and quality on food choice and consumption in both children and adults
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-row mb-16">
+                        <div className="mr-8 w-4/12">
+                            <img src="data:image/jpeg;base64,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" className="h-full w-full" />
+                        </div>
+                        <div className="">
+                            <div className="font-medium text-2xl  mb-1 lg:w-5/12">
+                                Protein Shake Recipe: Homemade Sattu Shake To Fuel Up Your Protein...
+                            </div>
+                            <div className=" text-base text-gray-newstime leading-6 mb-1 items-end lg:items-start">
+                                September 20, 2021
+                            </div>
+                            <div className="text-lg font-light leading-relaxed lg:w-8/12 hidden lg:block">
+                                here is much emerging information surrounding the impact of sleep duration and quality on food choice and consumption in both children and adults
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex items-center justify-center space-x-3 py-4">
+                        <a href="#" className="flex items-center px-4 py-2 text-gray-500 bg-gray-300 rounded-md">
+                            Previous
+                        </a>
+
+                        <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+                            1
+                        </a>
+                        <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+                            2
+                        </a>
+                        <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+                            3
+                        </a>
+                        <a href="#" className="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-blue-400 hover:text-white">
+                            Next
+                        </a>
+                    </div>
+                </div>
+                {/* ----------section---------- */}
+
+
+
+
+
+
+
+
+                {/* footer */}
             </div>
-
-
-
-            <div className="container mx-auto">
-                {/* Section1 */}
-                <div className="flex flex-col items-center py-8">
-                    <div className="flex mx-auto" >
-                        <Image
-                            src={MainContent}
-                            alt="Peoplescape" />
-                        {/* <div className="absolute w-full text-white text-5xl font-black text-center ">BLOG SINGLE</div> */}
-                    </div>
-                    <div className="w-full my-4 ">
-
-                        <div className=" font-black text-sm lg:text-xl my-2 ">
-                            Its like a kind of torture to have to watch the show.
-                        </div>
-                        <div className=" text-sm w-full py-3 ">
-
-                            A tale of a fateful trip that started from this tropic
-                            port aboard this tiny ship today still wanted by the
-                            government apartment in the sky moving on up to the east
-                            side a family to explore strange new worlds to seek out
-                            new life and new civilizations to boldly go where no man
-                            has gone before you would see the biggest gift would be
-                            from me and the card attached would say thank you for
-                            being a friend.
-
-                        </div>
-                        <div className="text-sm w-full py-3">
-                            That this group would somehow form a family that's the way
-                            we all became the Brady Bunch apartment in the sky moving
-                            on up to the east side a family to explore strange new
-                            worlds.
-                        </div>
-                        <div className="text-sm w-full py-3">
-                            This tropic port aboard this tiny ship today still wanted
-                            by the government apartment in the sky moving on up to the
-                            east side a family to explore strange new worlds to seek
-                            out new life and new civilizations to boldly go where no
-                            man has gone before you would see the biggest gift would
-                            be from me and the card.
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-                {/* Section2 */}
-                <div className="border-b-2 border-gray-200">
-                    <div className="flex flex-col lg:flex-row justify-center py-8 border-b-2 border-gray-900">
-                        {/* Space1 */}
-                        <div className="lg:w-1/3 w-full  px-auto">
-                            <img
-                                src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fblog%2F13.aac230b473bb9d416b00231907a0b6eb.jpg&w=640&q=75"
-                                alt="Content1" className="object-cover mx-auto w-auto max-h-full" />
-                            {/* <Image
-                                src={Section1}
-                                alt="Content1" className="object-cover w-full h-auto" /> */}
-                        </div>
-
-                        {/* Space2 */}
-
-
-                        <div className="lg:w-1/3 w-full mt-4 lg:mt-0">
-
-                            <div>
-                                <Icon icon="ci:double-quotes-l" className="mx-auto" color="#eee" width="85" height="107" />
-                            </div>
-                            <div className=" text-sm  w-full  text-gray-about ">
-
-                                Somehow form a family that's the way we all became
-                                the Brady Bunch apartment in the sky moving on up
-                                to the family tools explore strange new worlds us
-                                here each week my friends you're sure to get a
-                                smile.
-
-                            </div>
-                            <div className="my-4 text-base text-center lg:w-full  text-gray-about">
-                                - San Johnson -
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                    <div className=" text-sm my-2  w-full  text-gray-about ">
-
-
-                        A tale of a fateful trip that started from this tropic
-                        port aboard this tiny ship today still wanted by the
-                        government apartment in the sky moving on up to the east
-                        side a family to explore strange new worlds to seek out
-                        new life and new civilizations to boldly go where no man
-                        has gone before you would see the biggest gift would be
-                        from me and the card attached would say thank you for
-                        being a friend.
-
-
-                    </div>
-
-
-                    <div className="text-sm lg:w-full my-8  text-gray-about">
-
-                        To seek out new life and new civilizations to boldly go
-                        where no man has gone before you would see the biggest
-                        gift would be from me and the card attached would say
-                        thank you for new civilizations
-
-                    </div>
-
-                </div>
-
-                {/* Shared */}
-                <div className="flex justify-end py-1">
-                    <Icon className="mt-1 mx-1" icon="ci:share" width="12.86" height="15" />
-                    <div className="text-sm mx-1">Share :</div>
-                    <div>
-                        <button className="mx-1  font-semibold text-gray-1000 hover:text-black  inline-flex items-center space-x-2 rounded">
-                            <svg className="w-3.5 h-4 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
-                        </button>
-                    </div>
-                    <div>
-                        <button className="mx-1  font-semibold text-gray-1000 hover:text-black inline-flex items-center space-x-2 rounded">
-                            <svg className="w-3.5 h-4 fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
-                        </button>
-                    </div>
-                    <div>
-                        <button className="mx-1  font-semibold text-gray-1000 hover:text-black inline-flex items-center space-x-2 rounded">
-                            <svg className="w-3.5 h-4 fill-current" role="img" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                                <g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"></path></g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div>
-                        <button className="mx-1  font-semibold text-gray-1000 hover:text-black inline-flex items-center space-x-2 rounded">
-                            <svg className="w-3.5 h-4 fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" /></svg>
-                        </button>
-                    </div>
-                </div>
-
-                {/* Related */}
-                <div>
-                    <div className="font-black text-lg lg:text-4xl my-2 ">
-                        RELATED POSTS
-                        <div className="w-1/12 border-b-4 border-gray-300"></div>
-                    </div>
-                    <div className="flex flex-row mx-10 py-8 ">
-                        {/* Space1 */}
-                        <div className="w-1/2">
-
-                            <div className="mx-4">
-                                <img
-                                    src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fblog%2F13.aac230b473bb9d416b00231907a0b6eb.jpg&w=640&q=75"
-                                    alt="Content1" className="w-48" />
-                                <div className="my-3 text-lg font-bold">Trouble with the law since to eastern side of
-                                    yellow mint</div>
-                                <a href="#" className="font-bold text-blue-1000">READ MORE</a>
-                            </div>
-
-                        </div>
-
-                        {/* Space2 */}
-                        <div className="w-1/2">
-
-                            <div className="mx-4">
-                                <img
-                                    src="http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fimages%2Fblog%2F13.aac230b473bb9d416b00231907a0b6eb.jpg&w=640&q=75"
-                                    alt="Content1" className="w-48" />
-                                <div className="my-3 text-lg font-bold">Make the best of things its an uphill climb long
-                                    time</div>
-                                <a href="#" className="font-bold text-blue-1000">READ MORE</a>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
+        </>
     )
 }

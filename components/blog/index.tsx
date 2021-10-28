@@ -109,29 +109,30 @@ export default function Blog() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>{/* Pagination */}
-                    <div className="flex items-center justify-center space-x-3 py-4">
-                        <a href="#" className="flex items-center px-4 py-2 text-gray-500 bg-gray-300 rounded-md">
-                            Previous
-                        </a>
+                                </div>
+                                {/* Pagination */}
+                                <div className="flex items-center justify-center space-x-3 py-4">
+                                    <a href="#" className="flex items-center px-4 py-2 text-gray-500 bg-gray-300 rounded-md">
+                                        Previous
+                                    </a>
 
-                        <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
-                            1
-                        </a>
-                        <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
-                            2
-                        </a>
-                        <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
-                            3
-                        </a>
-                        <a href="#" className="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-blue-400 hover:text-white">
-                            Next
-                        </a>
-                    </div>
+                                    <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+                                        1
+                                    </a>
+                                    <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+                                        2
+                                    </a>
+                                    <a href="#" className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-blue-400 hover:text-white">
+                                        3
+                                    </a>
+                                    <a href="#" className="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-blue-400 hover:text-white">
+                                        Next
+                                    </a>
+                                </div>
                             </div>
-                            
+
                         </div>
-                        
+
                         <div className="h-96 col-span-2 xl:col-span-1 ">
                             <div className="bg-white py-3 px-4 rounded-lg flex justify-around items-center ">
                                 {/* <input type="text" placeholder="seach" className=" bg-gray-100 rounded-md  outline-none pl-2 ring-indigo-700 w-full mr-2 p-2"> */}
@@ -200,7 +201,7 @@ export default function Blog() {
                         </div>
 
                     </div>
-                    
+
                 </div>
 
 

@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import LogoFooter from "../../images/personalization/banner.png";
 
-export default function Home() {
+export default function Personalizaton() {
     return (
         <>
             {/* <Link href="/">
